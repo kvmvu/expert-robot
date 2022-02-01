@@ -64,14 +64,16 @@
     <main class="l-main bd-container">
         <div class="resume" id="area-cv">
             <div class="resume_left">
-<!--                {#  HOME  #}-->
+                <!-- HOME -->
                 <section class="home" id="home">
                     <div class="home_container section bd-grid">
                         <div class="home_data bd-grid">
-                            <img src="static/img/IMG_7794.JPG" alt="" class="home_img">
+                            <figure class="image container is-128x128">
+                                <img src="static/img/IMG_7794.JPG" alt="" class="is-rounded">
+                            </figure>
                             <h1 class="home_title">Eric <b>Kamau</b></h1>
                             <h3 class="home_profession">Software Engineer | Data Scientist</h3>
-<!--                            {#  Download button for the CV, to be saved as PDF  #}-->
+                            <!-- Download button for the CV, to be saved as PDF -->
                             <div>
                                 <a download="" href="static/pdf/eric-m-kamau-resume.pdf" class="home_button_resume"> Download </a>
                             </div>
@@ -88,12 +90,12 @@
                             </span>
                         </div>
                     </div>
-<!--                    {# Theme Change Button #}-->
+                    <!-- Theme Change Button -->
                     <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-<!--                    {# download pdf resume Button #}-->
+                    <!-- download pdf resume Button -->
                     <i class="fas fa-download generate-pdf" title="Download PDF" id="resume-button"></i>
                 </section>
-<!--                {# Social #}-->
+                <!-- Social -->
                 <section class="social section">
                     <h2 class="section-title">Social</h2>
                     <div class="social_container bd-grid">
@@ -111,7 +113,7 @@
                         </a>
                     </div>
                 </section>
-<!--                {# Education #}-->
+                <!-- Education -->
                 <section class="education section" id="education">
                     <h2 class="section-title">Education</h2>
                     <div class="education_container bd-grid">
@@ -140,7 +142,7 @@
                         <div class="education_content">
                             <div class="education_time">
                                 <span class="education_rounder"></span>
-                                <span class="education_line"></span>
+                                <!-- <span class="education_line"></span> -->
                             </div>
                             <div class="education_data bd-grid">
                                 <h3 class="education_title">Dip. Business Information Technology</h3>
@@ -148,19 +150,9 @@
                                 <span class="education_year">2013 - 2014</span>
                             </div>
                         </div>
-                        <div class="education_content">
-                            <div class="education_time">
-                                <span class="education_rounder"></span>
-                            </div>
-                            <div class="education_data bd-grid">
-                                <h3 class="education_title">High School O-Level</h3>
-                                <span class="education_studies">Strathmore  School, Nairobi</span>
-                                <span class="education_year">2009 - 2012</span>
-                            </div>
-                        </div>
                     </div>
                 </section>
-<!--                {# Skills #}-->
+                <!-- Skills -->
                 <section class="skills section" id="skills">
                     <h2 class="section-title">Skills</h2>
                     <div class="skills_content bd-grid">
@@ -172,6 +164,9 @@
                                 <span class="skills_circle"></span> Django
                             </li>
                             <li class="skills_name">
+                                <span class="skills_circle"></span> REST Framework
+                            </li>
+                            <li class="skills_name">
                                 <span class="skills_circle"></span> Vue.js
                             </li>
                             <li class="skills_name">
@@ -181,13 +176,16 @@
                                 <span class="skills_circle"></span> MySQL
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> Unit-testing
+                                <span class="skills_circle"></span> BigQuery
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> Data Preprocessing
+                                <span class="skills_circle"></span> Pytest
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> NumPy
+                                <span class="skills_circle"></span> Cloud Pub/sub
+                            </li>
+                            <li class="skills_name">
+                                <span class="skills_circle"></span> Dataflow
                             </li>
                         </ul>
                         <ul class="skills_data">
@@ -204,41 +202,45 @@
                                 <span class="skills_circle"></span> Plotly Dash
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> Matplotlib
-                            </li>
-                            <li class="skills_name">
                                 <span class="skills_circle"></span> Seaborn
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> Java
+                                <span class="skills_circle"></span> Dataproc
                             </li>
                             <li class="skills_name">
-                                <span class="skills_circle"></span> Azure
+                                <span class="skills_circle"></span> Google Cloud Platform
                             </li>
+                            <li class="skills_name">
+                                <span class="skills_circle"></span> Kafka
+                            </li>
+                            <li class="skills_name">
+                                <span class="skills_circle"></span> Spark
+                            </li>
+                        </ul>
                         </ul>
                     </div>
                 </section>
             </div>
             <div class="resume_right">
-<!--                {# Experience #}-->
+                <!-- Experience -->
                 <section class="experience section" id="experience">
                     <h2 class="section-title">Experience</h2>
                     <div class="experience_container bd-grid">
                         <div class="experience_content">
                             <div class="experience_time">
                             </div>
-                            <div class="experience_data bd-grid">
-                                <h3 class="experience_title">Software Engineer</h3>
-                                <span class="experience_company">2018 - Current | Credit Bank PLC</span>
-                                <ul class="experience_items">
-                                    <li class="experience_point">
-                                        <span class="experience_circle"></span> Developed, tested and deployed web services that would interface with channel applications (mobile, internet and API) to avail features such as funds transfer, loan application and deposit placement from the core banking system.
+                            <div class="content">
+                                <h5 class="experience_title">Software Engineer</h5>
+                                <p>2018 - Current | Credit Bank PLC</p>
+                                <ul>
+                                    <li>
+                                        Developed, tested and deployed low latency web services and RESTful APIs to avail features such as funds transfers, loan applications and deposit placements using Django REST framework and Temenos T24.
                                     </li>
-                                    <li class="experience_point">
-                                        <span class="experience_circle"></span> Streamlined revenue collection by writing Java and Jbase functions to automate charges for debit card, chequebook orders, statement printing and standing order fees to seal an income leak to the company.
+                                    <li>
+                                        Streamlined revenue collection by writing Java and Jbase functions to automate charges for debit cards, chequebook orders, statement printing and standing order fees to seal an income leak to the company.
                                     </li>
-                                    <li class="experience_point">
-                                        <span class="experience_circle"></span> Increased productivity of operational units within the company by automating client processes such as chequebook requests, bulk payments processing as well as mobile and internet banking subscriptions. These processes were previously done manually.
+                                    <li>
+                                        Increased productivity of operational units within the company by automating client processes such as chequebook requests, bulk payments processing as well as subscriptions to alternate channels.
                                     </li>
                                 </ul>
                             </div>
@@ -246,7 +248,7 @@
                     </div>
                 </section>
 
-<!--                {# Certifications #}-->
+                <!-- Certifications -->
                 <section class="certifications section" id="certifications">
                     <h2 class="section-title">Certifications</h2>
                     <div class="certifications_container bd-grid">
@@ -265,7 +267,7 @@
                     </div>
                 </section>
 
-<!--                {# Projects #}-->
+                <!-- Projects -->
                 <section class="projects section" id="projects">
                     <h2 class="section-title">Recent Projects</h2>
                     <div class="projects_container bd-grid">
